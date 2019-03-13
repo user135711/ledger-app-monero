@@ -35,7 +35,7 @@ void monero_init() {
 
   //first init ?
   if (os_memcmp(N_monero_pstate->magic, (void*)C_MAGIC, sizeof(C_MAGIC)) != 0) {
-    monero_install(MAINNET);
+    monero_install(STAGENET);
   }
 
   G_monero_vstate.protocol = 0xff;
